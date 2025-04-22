@@ -235,6 +235,40 @@
 	
 	
 
+
+<div class="spo" id="external-labels" aria-label="Related Labels"></div>
+
+<script>
+  function rak_info_Load(json) {
+    const labelsSet = new Set();
+    const posts = json.feed.entry;
+    if (!posts) return;
+
+    posts.forEach(post => {
+      if (post.category) {
+        post.category.forEach(cat => {
+          labelsSet.add(cat.term);
+        });
+      }
+    });
+
+    const labels = Array.from(labelsSet);
+    const container = document.getElementById("external-labels");
+
+    let html = '<section class="post-labels"><strong>Labels:</strong><ul style="list-style:none;padding:0;margin:0;">';
+
+    labels.forEach((label, index) => {
+      let staticPageUrl = "/halaman" + (index + 1).toString().padStart(2, '0') + "/"; // Contoh: /halaman01/
+      html += `<li style="display:inline;margin-right:10px;"><a href="${staticPageUrl}" target="_blank">${label}</a></li>`;
+    });
+
+    html += '</ul></section>';
+    container.innerHTML = html;
+  }
+</script>
+
+<script src="https://xcelebgram.my.id/feeds/posts/default?start-index=3&max-results=3&alt=json-in-script&callback=rak_info_Load"></script>
+	
 	
 </body>
 </html>
