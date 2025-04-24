@@ -1,0 +1,128 @@
+---
+layout: post
+title: "Crafting Killer Landing Pages with GitHub Pages That Google Loves"
+author: admin
+categories: [digital-marketing,landing-page,seo,github-pages]
+description: "Discover how to create high-performing, SEO-friendly marketing landing pages using GitHub Pages. Perfect for digital marketers on a budget."
+---
+
+<p>Building a landing page used to feel like preparing a 5-course meal—expensive, complicated, and a little terrifying. But when I found GitHub Pages, it was like switching to a reliable pressure cooker. Quick, easy, and surprisingly effective. Especially if you’re into digital marketing.</p>
+
+<p>So today, I’m sharing my playbook for building landing pages that convert *and* rank—using nothing but GitHub Pages, some HTML, and good old SEO tricks.</p>
+
+<h2>Why Even Use GitHub Pages for Landing Pages?</h2>
+<p>You might be thinking, “Isn’t GitHub for coders?” Fair question. But let me tell you—GitHub Pages is secretly a goldmine for marketers who want speed, simplicity, and control without coughing up a monthly fee.</p>
+
+<ul>
+  <li><strong>Zero hosting costs:</strong> Free is a pretty good price, especially when you're bootstrapping.</li>
+  <li><strong>Blazing fast load times:</strong> Google loves speed. Your users love it too.</li>
+  <li><strong>Version control built-in:</strong> Made a mistake? Revert it. Want to test something? Create a branch. It’s like having your own personal time machine.</li>
+  <li><strong>Custom domain support:</strong> Your brand stays intact, no ugly subdomains.</li>
+</ul>
+
+<h2>My First GitHub-Based Landing Page</h2>
+<p>My first attempt was to promote a free eBook about Instagram growth. I coded it in plain HTML, styled it with Tailwind CSS, and hosted it via GitHub Pages. The result? A one-screen page with a clear headline, a sign-up form (hooked to a third-party API), and some social proof. All loaded in under 500ms. Google’s PageSpeed tool gave it a 98/100.</p>
+
+<p>Conversions were modest at first, but when I added schema markup and tweaked some meta tags, organic traffic tripled in a week. All without spending a dime on hosting.</p>
+
+<h2>Step-by-Step: Build Your SEO-Optimized Landing Page</h2>
+
+<ol>
+  <li><strong>Plan your structure:</strong> Keep it simple. A clear headline, value proposition, CTA, and maybe some testimonials.</li>
+  <li><strong>Write the HTML:</strong> Use semantic tags. Don’t forget your meta tags and OG tags for social sharing.</li>
+  <li><strong>Style with CSS:</strong> Tailwind is great for utility-first styling. Keep it minimal and mobile-first.</li>
+  <li><strong>Host on GitHub Pages:</strong> Push to a repo, enable GitHub Pages in settings, and your site is live.</li>
+  <li><strong>Add a custom domain:</strong> Set it up in the repo’s settings and point your domain via DNS.</li>
+</ol>
+
+<h2>Things to Keep in Mind for SEO</h2>
+<p>Let’s be real—if your landing page doesn’t show up on Google, it’s basically invisible. Here are a few tricks I swear by:</p>
+
+<ul>
+  <li><strong>Use proper heading hierarchy:</strong> Start with <code>&lt;h2&gt;</code>, not <code>&lt;h1&gt;</code>. Your blog or site wrapper usually owns the <code>&lt;h1&gt;</code>.</li>
+  <li><strong>Include schema markup:</strong> FAQs, HowTos, and Reviews help stand out in search results.</li>
+  <li><strong>Optimize images:</strong> Compress them and add descriptive alt text.</li>
+  <li><strong>Don’t forget mobile:</strong> Use responsive design from the start. Google indexes mobile-first now.</li>
+</ul>
+
+<h2>Case Study: Local Service Lead Capture</h2>
+<p>A client of mine needed a landing page for a plumbing service in a small town. We set up a GitHub Pages site using a clean, mobile-friendly layout and embedded a Calendly widget for appointments. Within a month, they started receiving 5–10 leads per week—100% from organic traffic.</p>
+
+<p>The secret? Fast loading, local SEO optimization, and a well-structured page that delivered just what users needed—no fluff.</p>
+
+<h2>Bonus Tools That Work Well with GitHub Pages</h2>
+<p>Here are a few tools I’ve used to enhance my GitHub-hosted landing pages:</p>
+
+<ul>
+  <li><strong>Formspree or Getform:</strong> For forms without backend code.</li>
+  <li><strong>Mailchimp or ConvertKit:</strong> Connect your signup forms to email lists.</li>
+  <li><strong>Netlify Analytics:</strong> If you want more detail than Google Analytics.</li>
+  <li><strong>Cloudflare:</strong> Use it for DNS and security—plus caching boosts speed even more.</li>
+</ul>
+
+<h2>Final Thoughts</h2>
+<p>If you’re a digital marketer without a dev team—or just love doing things lean—GitHub Pages is a game-changer. Creating landing pages doesn’t need to be expensive or complex. You just need a plan, some HTML chops, and a clear goal.</p>
+
+<p>Start small. Test. Tweak. Learn. And before long, you’ll be launching lightning-fast pages that impress clients, generate leads, and make Google say, “Nice work!”</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can GitHub Pages be used for landing pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GitHub Pages is great for static landing pages, especially when combined with tools like Formspree or Mailchimp. It's free, fast, and reliable for marketers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is GitHub Pages SEO-friendly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. It serves static files over HTTPS, loads quickly, and integrates well with schema markup and SEO best practices."
+      }
+    }
+  ]
+}
+</script>
+
+
+
+<div class="spo" id="external-labels" aria-label="Related Labels"></div>
+
+<script>
+  function rak_info_Load(json) {
+    const labelsSet = new Set();
+    const posts = json.feed.entry;
+    if (!posts) return;
+
+    posts.forEach(post => {
+      if (post.category) {
+        post.category.forEach(cat => {
+          labelsSet.add(cat.term);
+        });
+      }
+    });
+
+    const labels = Array.from(labelsSet);
+    const container = document.getElementById("external-labels");
+
+    let html = '<section class="post-labels"><strong>Labels:</strong><ul style="list-style:none;padding:0;margin:0;">';
+
+    labels.forEach((label, index) => {
+      let staticPageUrl = "/halaman" + (index + 1).toString().padStart(2, '0') + "/"; // Contoh: /halaman01/
+      html += `<li style="display:inline;margin-right:10px;"><a href="${staticPageUrl}" target="_blank">${label}</a></li>`;
+    });
+
+    html += '</ul></section>';
+    container.innerHTML = html;
+  }
+</script>
+
+<script src="https://fazri.my.id/feeds/posts/default?start-index=154&max-results=3&alt=json-in-script&callback=rak_info_Load"></script>
+
+
