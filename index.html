@@ -1,61 +1,282 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Video Gallery | MayaIndri</title>
+  <meta name="description" content="Watch a collection of personal videos with custom thumbnails, including travel, vlogs, and more. Optimized for fast mobile playback.">
+  <meta name="author" content="Maya Fitri" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayafitri0001.github.io/mayaindri/" />
 
-{% if page.url == "/" %}
+  <style>
+    h1 {
+      text-align: center;
+      margin: 2rem 0;
+    }
 
-<!-- Featured
-================================================== -->
-<!--<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem 2rem;
+    }
+
+    .video-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+
+    video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .video-title {
+      padding: 0.5rem 1rem 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .video-description {
+      padding: 0 1rem 1rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Personal Video Gallery</h1>
+
+  <div class="video-grid">
+
+    <!-- Video 1 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://raw.githubusercontent.com/mayafitri0001/mayaindri/refs/heads/main/f/v/thumb/ji.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/1.mp4"></video>
+      <div class="video-title">A Day at the Park</div>
+      <div class="video-description">Enjoy a peaceful moment as we explore the city park during sunset.</div>
     </div>
-    <div class="row">
 
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-</section>-->
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        
-
+    <!-- Video 2 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/k.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/2.mp4"></video>
+      <div class="video-title">Coffee Shop Vibes</div>
+      <div class="video-description">A relaxing morning at my favorite local coffee shop with acoustic music playing.</div>
     </div>
 
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
+    <!-- Video 3 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/poo.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/3.mp4"></video>
+      <div class="video-title">Street Dance Clip</div>
+      <div class="video-description">Captured during a fun night out in the city with spontaneous street dancing.</div>
     </div>
 
-</section>
+    <!-- Video 4 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://raw.githubusercontent.com/mayafitri0001/mayaindri/refs/heads/main/f/v/thumb/v.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/4.mp4"></video>
+      <div class="video-title">City Drive POV</div>
+      <div class="video-description">POV driving through Jakarta at night with city lights and traffic.</div>
+    </div>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
+    <!-- Video 5 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/uy.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/404975887_331167086208379_8080162810756239464_n_001.mp4"></video>
+      <div class="video-title">Short Talk Session</div>
+      <div class="video-description">A quick chat about life, work, and personal growth filmed from home.</div>
+    </div>
 
+    <!-- Video 6 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/j.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/88edd0b7414b8a19c528f3192bdc40c4.mp4"></video>
+      <div class="video-title">Funny Cat Compilation</div>
+      <div class="video-description">A collection of the funniest moments with my pet cat.</div>
+    </div>
+
+    <!-- Video 7 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/hu.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/IGDownloader.App_2965220057467012027.mp4"></video>
+      <div class="video-title">Afternoon Chill</div>
+      <div class="video-description">Relaxing at home with music and tea after a long day.</div>
+    </div>
+
+    <!-- Video 8 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/h.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQN7T9sXUREY9SlESC7NZ9b85mXGHIsPOuVY-QQFmCuza7KL6jiSCEXJX4vj5lYW6NhF7bjkXhuZ8sHW_X7nA4sinOXW13vTytgiK-A.mp4"></video>
+      <div class="video-title">Behind The Scenes</div>
+      <div class="video-description">Go behind the scenes during the making of one of our projects.</div>
+    </div>
+
+    <!-- Video 9 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/foto.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOI5T1Yt-_q704N6bBHTE3wy23pUBWt63TqSZDBchudNK2jYV28KhnE7fFISoivZBz--Aq-6i9DscAyQ8ViH9jfSGLF5D6MJL2TU8E.mp4"></video>
+      <div class="video-title">Nature Walk</div>
+      <div class="video-description">A short relaxing video walking through the forest trail.</div>
+    </div>
+
+    <!-- Video 10 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/gy.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOWaqrkBcl0k5je8_E4qWMOY1oy7q8GENXO__OewT1LfXgC5vx4N96GFkWyKBOkN6H3VtaZ8bVOmdhODaZbgEVVrzkNq0-xyNUSMJM.mp4"></video>
+      <div class="video-title">Cooking Time</div>
+      <div class="video-description">Preparing a quick and delicious meal in the kitchen.</div>
+    </div>
+
+    <!-- Video 11 -->
+    <div class="video-card">
+      <video controls preload="metadata"
+        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/df.png"
+        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/d220468aab0db0af93a93cc2ddf85a1d.mp4"></video>
+      <div class="video-title">Late Night Thoughts</div>
+      <div class="video-description">Some deep thoughts and reflections shared before sleep.</div>
+    </div>
+
+  </div>
+
+  <!-- SEO Schema Markup for First Video -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "A Day at the Park",
+    "description": "Enjoy a peaceful moment as we explore the city park during sunset.",
+    "thumbnailUrl": "https://raw.githubusercontent.com/mayafitri0001/mayaindri/refs/heads/main/f/v/thumb/ji.png",
+    "uploadDate": "2024-12-01T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/1.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/1.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Coffee Shop Vibes",
+    "description": "A relaxing morning at my favorite local coffee shop with acoustic music playing.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/k.png",
+    "uploadDate": "2024-12-02T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/2.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/2.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Street Dance Clip",
+    "description": "Captured during a fun night out in the city with spontaneous street dancing.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/poo.png",
+    "uploadDate": "2024-12-03T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/3.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/3.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "City Drive POV",
+    "description": "POV driving through Jakarta at night with city lights and traffic.",
+    "thumbnailUrl": "https://raw.githubusercontent.com/mayafitri0001/mayaindri/refs/heads/main/f/v/thumb/v.png",
+    "uploadDate": "2024-12-04T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/4.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/4.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Short Talk Session",
+    "description": "A quick chat about life, work, and personal growth filmed from home.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/uy.png",
+    "uploadDate": "2024-12-05T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/404975887_331167086208379_8080162810756239464_n_001.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/404975887_331167086208379_8080162810756239464_n_001.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Funny Cat Compilation",
+    "description": "A collection of the funniest moments with my pet cat.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/j.png",
+    "uploadDate": "2024-12-06T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/88edd0b7414b8a19c528f3192bdc40c4.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/88edd0b7414b8a19c528f3192bdc40c4.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Afternoon Chill",
+    "description": "Relaxing at home with music and tea after a long day.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/hu.png",
+    "uploadDate": "2024-12-07T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/IGDownloader.App_2965220057467012027.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/IGDownloader.App_2965220057467012027.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Behind The Scenes",
+    "description": "Go behind the scenes during the making of one of our projects.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/h.png",
+    "uploadDate": "2024-12-08T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQN7T9sXUREY9SlESC7NZ9b85mXGHIsPOuVY-QQFmCuza7KL6jiSCEXJX4vj5lYW6NhF7bjkXhuZ8sHW_X7nA4sinOXW13vTytgiK-A.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQN7T9sXUREY9SlESC7NZ9b85mXGHIsPOuVY-QQFmCuza7KL6jiSCEXJX4vj5lYW6NhF7bjkXhuZ8sHW_X7nA4sinOXW13vTytgiK-A.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Nature Walk",
+    "description": "A short relaxing video walking through the forest trail.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/foto.png",
+    "uploadDate": "2024-12-09T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOI5T1Yt-_q704N6bBHTE3wy23pUBWt63TqSZDBchudNK2jYV28KhnE7fFISoivZBz--Aq-6i9DscAyQ8ViH9jfSGLF5D6MJL2TU8E.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOI5T1Yt-_q704N6bBHTE3wy23pUBWt63TqSZDBchudNK2jYV28KhnE7fFISoivZBz--Aq-6i9DscAyQ8ViH9jfSGLF5D6MJL2TU8E.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Cooking Time",
+    "description": "Preparing a quick and delicious meal in the kitchen.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/gy.png",
+    "uploadDate": "2024-12-10T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOWaqrkBcl0k5je8_E4qWMOY1oy7q8GENXO__OewT1LfXgC5vx4N96GFkWyKBOkN6H3VtaZ8bVOmdhODaZbgEVVrzkNq0-xyNUSMJM.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/Snapinst.app_video_AQOWaqrkBcl0k5je8_E4qWMOY1oy7q8GENXO__OewT1LfXgC5vx4N96GFkWyKBOkN6H3VtaZ8bVOmdhODaZbgEVVrzkNq0-xyNUSMJM.mp4"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Late Night Thoughts",
+    "description": "Some deep thoughts and reflections shared before sleep.",
+    "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/df.png",
+    "uploadDate": "2024-12-11T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/d220468aab0db0af93a93cc2ddf85a1d.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/d220468aab0db0af93a93cc2ddf85a1d.mp4"
+  }
+]
+</script>
+
+
+</body>
+</html>
