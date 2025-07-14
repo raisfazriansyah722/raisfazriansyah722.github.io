@@ -85,3 +85,29 @@
     link.setAttribute('rel', 'noopener noreferrer');
   });
 </script>
+
+<iframe 
+  src="/file/footer.html" 
+  loading="lazy"
+  allowfullscreen
+></iframe>
+
+<script>
+  // Otomatis sesuaikan tinggi iframe jika domain sama
+  window.addEventListener("load", function () {
+    const iframe = document.querySelector("iframe");
+    if (!iframe) return;
+
+    // Pastikan iframe sudah load
+    iframe.addEventListener("load", function () {
+      try {
+        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+        const iframeHeight = iframeDoc.body.scrollHeight;
+        iframe.style.height = iframeHeight + "px";
+      } catch (e) {
+        // Cross-origin tidak bisa diakses
+        console.warn("Tidak bisa mengakses isi iframe karena beda origin.");
+      }
+    });
+  });
+</script>
