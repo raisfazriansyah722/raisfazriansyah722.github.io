@@ -184,7 +184,29 @@
   allowfullscreen
 ></iframe>
 
+<div id="ads-placeholder"></div>
+<script>
+    function includeHTML(id, url) {
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error("Gagal memuat file: " + url);
+          return response.text();
+        })
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
+        })
+        .catch(err => {
+          console.error("Include error:", err);
+        });
+    }
+
+    includeHTML("ads-placeholder", "/file/ads.html");
+  </script>
+	
+	
+	
 <script src="/file/j.js"></script>
+
 	
 </body>
 </html>
