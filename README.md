@@ -3,181 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leaked Video - page3</title>
-  <meta name="description" content="my private leaked page3">
+  <title>Leaked Video - page14</title>
+  <meta name="description" content="My private folder leaked - page14 . Watch the full video now." />
   <meta name="author" content="Maya Fitri" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.blogingga.my.id/p/page3.html" />
+  <link rel="canonical" href="https://www.blogingga.my.id/p/page14.html" />
+  
+  <!-- Favicon standar -->
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/file/s.css" />
+  
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="3NVqugxvZU1Aoz8EkvYaP_JYJ2fuW1j4U33zXGTQVik" />
 
-  <style>
-    h2 {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 0 1rem 2rem;
-    }
-
-    .video-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .video-card:hover {
-      transform: translateY(-5px);
-    }
-
-    video {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16 / 9;
-      background: #000;
-    }
-
-    .video-title {
-      padding: 0.5rem 1rem 0;
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    .video-description {
-  position: fixed;
-  bottom: 0;
-  left: 100%;
-  width: 100%;
-height: auto;
-  background: #fff;
-  border-top: 1px solid #ddd;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: space-around;
-  padding: 6px 0;
-  z-index: 9999;
-}
-  </style>
-
-<meta name="google-site-verification" content="3NVqugxvZU1Aoz8EkvYaP_JYJ2fuW1j4U33zXGTQVik" />	
-</head>
-<body>
-
-  <h2>My Personal Video Gallery</h2>
-
-  <div class="video-grid">
-    <!-- Video 1-->
-    <div class="video-card">
-      <video controls preload="metadata"
-        poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/df.png"
-        src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juhttps://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juli%202025/asean%20sexy%20girl%20in%20club%20partty.mp4"></video>
-      <div class="video-title">Leaked Video </div>
-      <div class="video-description">
-      	
-      
-      
-      
-      </div>
-            <div class="video-description">
-        <script type="text/javascript">
-	atOptions = {
-		'key' : '84166dfcf092af9e71809d1503a36c61',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/84166dfcf092af9e71809d1503a36c61/invoke.js"></script>
-<script type='text/javascript' src='//pl16705725.profitableratecpm.com/b0/88/20/b088207eb76fc6eef9fb283d1b724cf1.js'></script>
-<script type='text/javascript' src='//pl26311349.profitableratecpm.com/87/79/b0/8779b028f0c3c430be2f9301620b5ff7.js'></script><script type="text/javascript">
-	atOptions = {
-		'key' : 'a4fe491b05c4d47bd5a7574ecc31dd4b',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/a4fe491b05c4d47bd5a7574ecc31dd4b/invoke.js"></script>
-        <script type="text/javascript">
-	atOptions = {
-		'key' : '10a56905da9a6bcf977564233ffdc0fc',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/10a56905da9a6bcf977564233ffdc0fc/invoke.js"></script>
-        <script type="text/javascript">
-	atOptions = {
-		'key' : '006a426bbcfbbb7041f564ef56e01470',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/006a426bbcfbbb7041f564ef56e01470/invoke.js"></script><script type="text/javascript">
-	atOptions = {
-		'key' : '6f7a09817825958a8622f53decaccd9c',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/6f7a09817825958a8622f53decaccd9c/invoke.js"></script><script type="text/javascript">
-	atOptions = {
-		'key' : 'add2e8c6881dd33568665625b2425933',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/add2e8c6881dd33568665625b2425933/invoke.js"></script>
-        
-        
-        
-      </div>
-    </div>
-
-  </div>
-
-  <!-- SEO Schema Markup for First Video -->
+  <!-- Schema Markup -->
   <script type="application/ld+json">
-[
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Leaked Video - page3",
-    "description": "Leaked Video - page3.",
+    "name": "Leaked Video - page14",
+    "description": "Leaked private folder video, page14",
     "thumbnailUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/df.png",
-    "uploadDate": "2024-12-11T08:00:00+07:00",
-    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juhttps://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juli%202025/asean%20sexy%20girl%20in%20club%20partty.mp4",
-    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juhttps://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/13%20juli%202025/asean%20sexy%20girl%20in%20club%20partty.mp4"
+    "uploadDate": "2025-07-07T08:00:00+07:00",
+    "contentUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/14jul25/17.mp4",
+    "embedUrl": "https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/14jul25/17.mp4"
   }
-]
-</script>
+  </script>
+</head>
+<body>
+  <main>
+    <h2>Leaked Video - Page 14</h2>
 
-<div style="position: relative; width: 100%; height: auto; max-width: 100%;">
-  <iframe 
-    src="/file/footer.html" 
-    loading="lazy"
-    width="100%" 
-    height="auto" 
-    style="border: none; width: 100%; min-height: 100px;"
-    allowfullscreen
-  ></iframe>
-</div>
-	
+    <div class="video-grid">
+      <div class="video-card">
+        <video 
+          controls 
+          preload="metadata"
+          poster="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/v/thumb/df.png"
+          width="100%"
+          height="auto"
+        >
+          <source src="https://github.com/mayafitri0001/mayaindri/raw/refs/heads/main/f/14jul25/17.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="video-description">
+          <p>😀😀😀😀😀</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer & Ads (gunakan div terpisah) -->
+    <div class="footer-frame">
+      <iframe 
+        src="/file/footer.html" 
+        loading="lazy"
+        allowfullscreen
+        style="width:100%; border:none;"
+      ></iframe>
+    </div>
+
+          <div class="video-description">
+      <iframe 
+        src="/file/ads.html" 
+        loading="lazy"
+        allowfullscreen
+        style="width:100%; border:none;"
+      ></iframe>
+    </div>
+  </main>
+
+  <script src="/file/j.js"></script>
 </body>
 </html>
-
-
