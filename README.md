@@ -36,7 +36,7 @@
 </head>
 <body>
   <main>
-    <h2>Leaked Video - Page 14</h2>
+    <h2>Leaked Video - Page14</h2>
 
     <div class="video-grid">
       <div class="video-card">
