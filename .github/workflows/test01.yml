@@ -1,8 +1,8 @@
-name: Mirror Upstream (Force Except Workflows)
+name: Mirror Upstream (Force Except Workflows Ads Index)
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -24,11 +24,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Save local workflows
+      - name: Save local workflows ads and index
         run: |
           mkdir -p /tmp/workflows
+          mkdir -p /tmp/ads
+
           if [ -d ".github/workflows" ]; then
             cp -r .github/workflows /tmp/workflows/
+          fi
+
+          if [ -d "_includes/ads" ]; then
+            cp -r _includes/ads /tmp/ads/
+          fi
+
+          if [ -f "index.html" ]; then
+            cp index.html /tmp/index.html
           fi
 
       - name: Add upstream
@@ -40,16 +50,27 @@ jobs:
         run: |
           git reset --hard upstream/master
 
-      - name: Restore workflows
+      - name: Restore workflows ads and index
         run: |
           rm -rf .github/workflows
+          rm -rf _includes/ads
+
           if [ -d "/tmp/workflows/workflows" ]; then
             mkdir -p .github
             cp -r /tmp/workflows/workflows .github/
           fi
 
+          if [ -d "/tmp/ads/ads" ]; then
+            mkdir -p _includes
+            cp -r /tmp/ads/ads _includes/
+          fi
+
+          if [ -f "/tmp/index.html" ]; then
+            cp /tmp/index.html index.html
+          fi
+
       - name: Force push to fork
         run: |
           git add .
-          git commit -m "Force sync except workflows" || echo "No changes"
+          git commit -m "Force sync except workflows ads and index" || echo "No changes"
           git push origin master --force
